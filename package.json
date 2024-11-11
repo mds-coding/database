@@ -1,0 +1,24 @@
+{
+  "license": "ISC",
+  "version": "0.0.0",
+  "author": "mdos-san",
+  "name": "@mds-coding/database",
+  "description": "Wrapper for all database related classes inside @mds-coding",
+  "type": "module",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "prepack": "npm run build",
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "dependencies": {
+    "@mds-coding/database-criteria": "^3.0.0",
+    "@mds-coding/database-entity": "^3.0.0",
+    "@mds-coding/database-provider-abstract": "^3.0.0",
+    "@mds-coding/database-provider-mongo": "^3.0.0",
+    "@mds-coding/database-query": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
